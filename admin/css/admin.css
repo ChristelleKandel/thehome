@@ -1,0 +1,17 @@
+.bg-b
+{
+    background-color: rgb(29,29,27);
+}
+.bg-b *
+{
+    color:rgb(123,106,88) ;
+}
+
+.bg-gold {
+    background-color:rgb(123,106,88);
+    
+}
+
+.bg-gold * {
+    color :rgb(29,29,27);
+}

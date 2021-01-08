@@ -1,0 +1,172 @@
+/*------------------------ BASE------------------------ */
+
+body{
+    background-color: rgba(123,106,88,.55);
+    font-family: 'Exo 2', sans-serif;
+    font-size: x-large;
+}
+tr td  i{
+    font-size: medium;
+}
+
+.bg-b
+{
+    background-color: rgb(29,29,27);
+}
+.bg-b *
+{
+    color:rgb(123,106,88) ;
+}
+.bg-alpha{
+    background-color: rgba(29,29,27,.55) ;
+    border-radius: 4px;
+    padding :1vh 5vh; 
+}
+a{
+    color:rgb(123,106,88) ;
+}
+
+.gold-border{
+    border: 2px ridge rgb(123,106,88);
+}
+
+.hidden{
+	display:none;
+}
+
+footer{
+    font-size: medium;
+}
+
+/*------------------------ Ecran d'accueil------------------------ */
+header{
+    background-image: url('img/img1.jpg');
+    background-size:cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    
+    transition-property: 'background-position';
+    transition-duration: 1000ms;
+    height: 100vh; /* Définition de la hauteur par défaut  */
+	height: calc(var(--vh, 1vh) * 100); /* Définition dynamique de la hauteur*/
+}
+
+.logo{
+    max-width: 90vh;
+    max-height: 90vh;
+    padding-top: 10vh;
+
+}
+#logo{
+    border-radius: 100%;
+    background-color: rgba(29, 29, 27, 0.600);
+    
+}
+
+/*----------------------------- navbar ------------------------*/
+/*------------------------ Nav principale ------------------------*/
+
+#navbar{
+    /* display: flex;
+    align-items: center; */
+    border-bottom: 3px solid rgb(123,106,88);
+}
+nav a{
+    font-size: xx-large;
+    
+}
+/* Class JS */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.relative{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* ------------------------nav de la carte------------------------ */
+.menu{
+    background-color: rgb(29,29,27) ;
+    color: rgb(123,106,88);
+    transition-property: "color", "background-color";
+    transition-duration: 400ms;
+    height: 100%;
+}
+.menu:hover {
+    background-color:rgb(123,106,88);
+    color: rgb(29,29,27);
+}
+
+.active {
+    background-color:rgb(123,106,88);
+    color: rgb(29,29,27);
+}
+
+/*------------------------ Affichage de la carte ------------------------*/
+
+table td{
+    border-top: none !important;
+}
+.border-none{
+    border-bottom: none !important;
+}
+#carte-bloc{
+    min-height: 30vh;
+}
+/*------------------------ Image de séparation des sections ------------------------*/
+.separ{
+    background-image: url('img/img4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 50vh; /* Définition de la hauteur par défaut  */
+	min-height: calc(var(--vh, 1vh) * 50); /* Définition dynamique de la hauteur*/
+}
+
+/*------------------------ ARTICLES ------------------------*/
+.photo{
+    background-image: url('img/img3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    width: 100%;
+    border:2px solid rgb(29,29,27);
+}
+
+
+iframe{
+    min-height:50vh;
+}
+
+
+/*------------------------ SOCIAL BOX ------------------------*/
+.social-box{
+    display: flex;
+    justify-content: center;
+}
+.social-box a{
+    font-size: x-large;
+    transition-property: "color";
+    transition-duration: 200ms;
+}
+.social-box a:hover i{
+    color:  rgba(123,106,88,.55); 
+}
+
+
+/*------------------------ MEDIA QUERY------------------------ */
+@media screen and (max-width: 640px){
+    .menu>p{
+        font-size: x-small;
+    }
+    header{
+        background-position: center;
+    }
+}
